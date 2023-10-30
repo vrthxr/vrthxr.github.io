@@ -10,9 +10,15 @@ function scrollToElement(elementSelector, instance = 0) {
 }
 // pegar elemento com o id link1
 const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const aboutme = document.getElementById("aboutme");
 // adicionar evento com o clique
 link1.addEventListener("click", () => {
   scrollToElement(".header");
+});
+
+link2.addEventListener("click", () => {
+  scrollToElement(".aboutme");
 });
 
 // Botão de scrollar para o topo aparecendo depois de scrollar certo ponto da página
