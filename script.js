@@ -8,14 +8,14 @@ function scrollToElement(elementSelector, instance = 0) {
     elements[instance].scrollIntoView({ behavior: "smooth" });
   }
 }
-
+// pegar elemento com o id link1
 const link1 = document.getElementById("link1");
-
+// adicionar evento com o clique
 link1.addEventListener("click", () => {
   scrollToElement(".header");
 });
 
-// Botão de scrollar para o topo
+// Botão de scrollar para o topo aparecendo depois de scrollar certo ponto da página
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
@@ -24,4 +24,11 @@ window.addEventListener("scroll", () => {
   } else {
     toTop.classList.remove("active");
   }
+});
+
+// teste abrir botão em outra pagina com jscript
+const button = document.querySelector(".btn");
+
+button.addEventListener("click", () => {
+  window.open("https://whatsa.me/5524993959368/?t=Ol%C3%A1!");
 });
