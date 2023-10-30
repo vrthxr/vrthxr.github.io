@@ -35,6 +35,7 @@ nav {
 .nav-logo {
   width: 100px;
   height: auto;
+  border-radius: 5px;
 }
 
 .nav-links {
@@ -134,4 +135,145 @@ header .image {
 header .image img {
   max-width: 600px;
   margin: auto;
+}
+
+section .header {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.projects {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  gap: 2rem;
+}
+
+.projects .card {
+  background-color: #545454;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3 ease;
+}
+
+.projects .card:hover {
+  background-color: #5a5a5a;
+  border-color: #fff;
+}
+
+.projects .card span {
+  display: inline-block;
+  padding: 2px 9px;
+}
+
+.projects .card h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.projects .card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.projects .card a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.projects .card a:hover {
+  color: #5a5a5a;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat (3, 1fr);
+  gap: 2rem;
+}
+
+footer .column .logo {
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+
+footer .column p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+footer .column .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .column .socials a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  font-size: 1rem;
+  transition: all 0.3 ease;
+}
+
+footer .column .socials a:hover {
+  color: #545454;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+/* tentativa de código responsivo, treinamento */
+@media (width< 900px) {
+  .nav-links {
+    display: none;
+  }
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .iamge {
+    grid-area: 1/1 2/2;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.to-top {
+  background-color: #fff;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #5a5a5a;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.to-top.active {
+  bottom: 2rem;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media (width< 600px) {
+  header .image::before {
+    display: none;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

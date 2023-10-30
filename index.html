@@ -8,20 +8,19 @@
     <title>Arthur Constâncio</title>
   </head>
   <body>
-    
+<!-- Barra de navegação -->
     <nav>
         <div class="nav-logo">
             <a href="#">
                 <img src="images/logo.png">
         </div>
         <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li class="link"><a href="#">Projects</a></li>
+            <li id= "home" class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Projects</a></li>
         </ul>
         <button class="btn">Contact</button>
     </nav>
-    
-    
+<!-- Container de Introdução -->
     <header class="container">
       <div class="content">
         <span class="blur"></span>
@@ -29,19 +28,60 @@
         <h4>QUICK INTRODUCTION</h4>
         <h1>Hi, I'm <span>Arthur</span>.</h1>
         <p>
-          I'm a Full Stack Developer based in Minas Gerais, Brazil. 📍
+          A Full Stack developer based in Minas Gerais, Brazil. 📍
         </p>
       </div>
       <div class="image">
         <img src="images/header.png" alt="">
       </div>
     </header>
+<!-- Projetos -->
+    <section class="container">
+      <h2 class="header">PROJECTS</h2>
+      <div class="projects">
+        <div class="card">
+          <span><i class="ri-game-line"></i></span>
+          <h4>Snake Game Python</h4>
+          <p>This was an simple snake game that was made entirely in python, one of my first projects. All line of codes of this project can be found on the Github page below.</p>
+          <a href="https://github.com/vrthxr/pythonsnakegame"> <i class="ri-arrow-drop-right-line"></i><i class="ri-github-fill"></i> Github Page</a>
+        </div>
+        <div class="card">
+          <span><i class="ri-pages-fill"></i></span>
+          <h4>Portfolio</h4>
+          <p>This portfolio was made with HTML, CSS and JAVASCRIPT. Im trying to always commit changes to it, putting on new projects and updating infos. All line of codes of this project can be found on the Github page below.</p>
+          <a href="https://github.com/vrthxr/vrthxr.github.io"> <i class="ri-arrow-drop-right-line"></i><i class="ri-github-fill"></i> Github Page</a>
+        </div>
+        <!-- fill out this below with +1 project -->
+        <div class="card"> 
+          <span><i class="ri-more-line"></i></span>
+          <h4>Lorem ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsa rem nobis, hic harum nulla dolores officiis neque voluptates qui! Doloremque quod repellat consectetur sit incidunt alias accusantium voluptatibus voluptatum.</p>
+          <a href="#"> <i class="ri-arrow-drop-right-line"></i><i class="ri-github-fill"></i> Github Page</a>
+        </div>
+      </div>
+    </section>
+<!-- Footer -->
+    <footer class="container">
+      <span class="blur"></span>
+      <span class="blur"></span>
+      <div class="column">
+        <div class="logo">
+          <img src="images/logo.png">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="socials">
+          <a href="https://whatsa.me/5524993959368/?t=Ol%C3%A1!"><i class="ri-whatsapp-line"></i></a>
+          <a href="https://github.com/vrthxr"><i class="ri-github-line"></i></a>
+          <a href="https://www.instagram.com/theyh8arthur"><i class="ri-instagram-line"></i></a>
+        </div>
+      </div>
+    </footer>
 
-    <div class="container">
-      <h2 class="header"></h2>
-    </div>
-
-
+    <a href="#" class="to-top">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+    
     <script src="script.js"></script>
+  
   </body>
 </html>
