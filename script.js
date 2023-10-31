@@ -35,5 +35,5 @@ window.addEventListener("scroll", () => {
 const button = document.querySelector(".btn");
 
 button.addEventListener("click", () => {
-  window.open("https://whatsa.me/5524993959368/?t=Ol%C3%A1!");
+  window.open("contact.html");
 });
