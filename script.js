@@ -34,6 +34,30 @@ window.addEventListener("scroll", () => {
 // teste abrir botão em outra pagina com jscript
 const button = document.querySelector(".btn");
 
-button.addEventListener("click", () => {
-  window.open("contact.html");
-});
+// abrir e-mail de contato/fechar e-mail de contato colocando e removendo a classe hidden
+function openContact() {
+  document.getElementById("contact").classList.remove("hidden");
+}
+
+function closeContact() {
+  document.getElementById("contact").classList.add("hidden");
+}
+
+// função de enviar o e-mail
+function sendEmail() {
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "vrthxremail@gmail.com",
+    Password: "6113737E898BA73BE0809A37CF5668B3479D",
+    To: "constancio_arthur@yahoo.com",
+    From: document.getElementById("email").value,
+    Subject: "E-mail from vrthxr.github.io",
+    Body:
+      "Name: " +
+      document.getElementById("name").value +
+      "<br> Email: " +
+      document.getElementById("email").value +
+      "<br> Message: " +
+      document.getElementById("message").value,
+  }).then((message) => alert("Message sent! <3"));
+}

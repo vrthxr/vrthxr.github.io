@@ -18,7 +18,7 @@
             <li id="link2" class="link"><a href="#">About Me</a></li>
             <li id="link1" class="link"><a href="#">Projects</a></li>
         </ul>
-<button class="btn">Contact</button></a>
+<button class="btn" onclick="openContact()">Contact</button></a>
     </nav>
 <!-- Container de Introdução -->
     <header class="container">
@@ -45,6 +45,20 @@
         </div>
       </div>
     </section>
+
+<!-- contact -->
+
+<div id="contact" class="contact hidden">
+    <div class="container">
+        <form onsubmit="sendEmail(); closeContact(); reset(); return false">
+            <h3>Contact me!</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your E-mail" required>
+            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
 
 
 <!-- Projetos -->
@@ -94,7 +108,8 @@
       <i class="ri-arrow-up-s-line"></i>
     </a>
 
-    <script src="script.js"></script>  
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
   
 </body>
 </html>
