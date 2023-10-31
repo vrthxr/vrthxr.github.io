@@ -13,8 +13,8 @@
   <body scroll="no" style="overflow: hidden">
     <!-- nav -->
     <nav>
-        <div class="nav-logo">
-            <a href="index.html">
+        <div class="nav-logo" onclick="window.location.href='index.html'">
+            <a href="#">
                 <img src="images/logo.png">
         </div>
     </nav>
@@ -42,7 +42,7 @@
     Subject : "E-mail from vrthxr.github.io",
     Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value
 }).then(
-  message => alert("Message sent! I'll get in touch as quickly as")
+  message => alert("Message sent! <3")
 );
         }
 
