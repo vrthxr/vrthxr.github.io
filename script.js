@@ -46,9 +46,7 @@ function closeContact() {
 // função de enviar o e-mail
 function sendEmail() {
   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "vrthxremail@gmail.com",
-    Password: "F54227C3BC7F032C1FFD19437062CE42B086",
+    SecureToken: "dee6301f-7211-44cd-9b84-b18eea240456",
     To: "constancio_arthur@yahoo.com",
     From: document.getElementById("email").value,
     Subject: "E-mail from vrthxr.github.io",
