@@ -233,7 +233,10 @@ footer .column p {
 
 footer .column .socials {
   display: flex;
-  align-items: center;
+  justify-content: end;
+  top: 6.3rem;
+  position: absolute;
+  right: 0;
   gap: 1rem;
 }
 
@@ -250,6 +253,7 @@ footer .column .socials a:hover {
   background-color: #ccc;
   border-color: #ccc;
 }
+
 /* tentativa de código responsivo, treinamento */
 @media (width< 900px) {
   .nav-links {
