@@ -296,13 +296,39 @@ footer .column .socials a:hover {
 }
 
 .contact {
-  width: 100%;
-  height: 100vh;
-  background-color: #5a5a5a;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-top: -100px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.container .contact {
+  margin: 15% auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 form {
