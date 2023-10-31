@@ -48,7 +48,7 @@ function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "vrthxremail@gmail.com",
-    Password: "6113737E898BA73BE0809A37CF5668B3479D",
+    Password: "F54227C3BC7F032C1FFD19437062CE42B086",
     To: "constancio_arthur@yahoo.com",
     From: document.getElementById("email").value,
     Subject: "E-mail from vrthxr.github.io",
