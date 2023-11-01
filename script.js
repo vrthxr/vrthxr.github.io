@@ -48,7 +48,7 @@ function sendEmail() {
   Email.send({
     SecureToken: "dee6301f-7211-44cd-9b84-b18eea240456",
     To: "constancio_arthur@yahoo.com",
-    From: document.getElementById("email").value,
+    From: "feedmepvp@gmail.com",
     Subject: "E-mail from vrthxr.github.io",
     Body:
       "Name: " +
