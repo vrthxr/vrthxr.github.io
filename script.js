@@ -44,7 +44,7 @@ function closeContact() {
 }
 
 // inicializar EmailJS com sua Public Key
-emailjs.init("1pTKGsVwZNTElo9zp");
+emailjs.init({ publicKey: "1pTKGsVwZNTElo9zp" });
 
 // função de enviar o e-mail
 function sendEmail() {
