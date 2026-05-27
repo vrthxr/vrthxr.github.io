@@ -52,6 +52,5 @@ function sendEmail() {
     from_name: document.getElementById("name").value,
     reply_to: document.getElementById("email").value,
     message: document.getElementById("message").value,
-  }).then(() => alert("Message sent! <3"))
-    .catch((error) => alert("Erro: " + JSON.stringify(error)));
+  }).then(() => alert("Message sent! <3"));
 }
