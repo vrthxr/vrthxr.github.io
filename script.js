@@ -48,7 +48,7 @@ emailjs.init("1pTKGsVwZNTElo9zp");
 
 // função de enviar o e-mail
 function sendEmail() {
-  emailjs.send("service_s90ut7r", "template_ivumo6d", {
+  emailjs.send("service_8s02uzi", "template_ivumo6d", {
     from_name: document.getElementById("name").value,
     reply_to: document.getElementById("email").value,
     message: document.getElementById("message").value,
