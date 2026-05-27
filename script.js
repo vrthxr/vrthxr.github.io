@@ -43,19 +43,14 @@ function closeContact() {
   document.getElementById("contact").classList.add("hidden");
 }
 
+// inicializar EmailJS com sua Public Key
+emailjs.init("1pTKGsVwZNTElo9zp");
+
 // função de enviar o e-mail
 function sendEmail() {
-  Email.send({
-    SecureToken: "dee6301f-7211-44cd-9b84-b18eea240456",
-    To: "constancio_arthur@yahoo.com",
-    From: "feedmepvp@gmail.com",
-    Subject: "E-mail from vrthxr.github.io",
-    Body:
-      "Name: " +
-      document.getElementById("name").value +
-      "<br> Email: " +
-      document.getElementById("email").value +
-      "<br> Message: " +
-      document.getElementById("message").value,
-  }).then((message) => alert("Message sent! <3"));
+  emailjs.send("service_s90ut7r", "template_ivumo6d", {
+    from_name: document.getElementById("name").value,
+    reply_to: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  }).then(() => alert("Message sent! <3"));
 }
